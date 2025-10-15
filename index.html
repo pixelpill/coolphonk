@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Squirrel’s Unblocked Arcade</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>🕹️ Squirrel’s Arcade</h1>
+    <nav>
+      <button class="pill">Home</button>
+      <button class="pill">Games</button>
+      <button class="pill">Settings</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="game-grid">
+      <!-- Game card template -->
+      <a href="games/1v1lol.html" class="game-card">
+        <img src="images/1v1lol.png" alt="1v1.LOL" />
+        <span>1v1.LOL</span>
+      </a>
+      <a href="games/retro-bowl.html" class="game-card">
+        <img src="images/retrobowl.png" alt="Retro Bowl" />
+        <span>Retro Bowl</span>
+      </a>
+      <a href="games/geometry-dash.html" class="game-card">
+        <img src="images/geometrydash.png" alt="Geometry Dash" />
+        <span>Geometry Dash</span>
+      </a>
+      <!-- Add more games here -->
+    </section>
+  </main>
+
+  <div id="settings-panel">
+    <h3>Settings</h3>
+    <label>
+      <input type="checkbox" id="music-toggle" checked />
+      Background Music
+    </label>
+    <p>Konami code unlocks a secret game 👀</p>
+  </div>
+
+  <footer>
+    <p>Made by MRcfc
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
