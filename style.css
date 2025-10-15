@@ -55,7 +55,7 @@ button.pill:hover {
 /* Game grid */
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5, 1fr));
   gap: 25px;
   margin-top: 30px;
 }
