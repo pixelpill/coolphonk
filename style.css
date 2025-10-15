@@ -1,0 +1,103 @@
+:root {
+  --accent: #ff2d95;
+  --bg: radial-gradient(circle at top left, #0f0f0f, #1a1a1a);
+  --pill-bg: rgba(255, 255, 255, 0.1);
+  --pill-hover: rgba(255, 255, 255, 0.3);
+  --card-bg: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: var(--bg);
+  color: #fff;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--accent);
+}
+
+/* Navigation pills */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+button.pill {
+  background: var(--pill-bg);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 10px 24px;
+  color: var(--accent);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button.pill:hover {
+  background: var(--pill-hover);
+  transform: scale(1.05);
+}
+
+/* Game grid */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.game-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* Settings panel */
+#settings-panel {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #111;
+  border: 1px solid var(--accent);
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 10px var(--accent);
+}
