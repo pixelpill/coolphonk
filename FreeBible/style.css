@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  color: #fdf6e3;
+  background: linear-gradient(to bottom, #1a1a2e, #16213e, #0f3460);
+  background-attachment: fixed;
+  background-size: cover;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ffcc70;
+  text-shadow: 2px 2px 5px #000;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  font-size: 1.1em;
+}
+
+.verse {
+  margin-bottom: 1em;
+  padding-left: 10px;
+  border-left: 2px solid #ffcc70;
+}
